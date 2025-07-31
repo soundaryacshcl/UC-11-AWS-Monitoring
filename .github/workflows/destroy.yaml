@@ -22,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      AWS_REGION: ${{ secrets.AWS_REGION || 'us-east-1' }}
-      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN || 'arn:aws:iam::123456789012:role/oidc-assume-role' }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}
 
     defaults:
       run:
