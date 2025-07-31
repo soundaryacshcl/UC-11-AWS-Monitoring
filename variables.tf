@@ -16,12 +16,12 @@ variable "notification_emails" {
   type        = list(string)
   
   validation {
-    condition = alltrue([
-      for email in var.notification_emails : can(regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", email))
-    ])
-    error_message = "All email addresses must be valid."
-  }
+  condition = alltrue([
+    for email in var.notification_emails : can(regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", email))
+  ])
+  error_message = "All email addresses must be valid."
 }
+
 
 variable "multi_region_trail" {
   description = "Whether the CloudTrail should be multi-region"
