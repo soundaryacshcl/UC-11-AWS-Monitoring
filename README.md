@@ -45,7 +45,7 @@ No modules.
 | <a name="input_alarm_evaluation_periods"></a> [alarm\_evaluation\_periods](#input\_alarm\_evaluation\_periods) | Number of evaluation periods for the CloudWatch alarm | `number` | `1` | no |
 | <a name="input_alarm_period_seconds"></a> [alarm\_period\_seconds](#input\_alarm\_period\_seconds) | Period in seconds for the CloudWatch alarm evaluation | `number` | `300` | no |
 | <a name="input_alarm_threshold"></a> [alarm\_threshold](#input\_alarm\_threshold) | Threshold for the CloudWatch alarm (number of login events) | `number` | `1` | no |
-| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | AWS region where resources will be created | `string` | `"us-east-1"` | no |
+| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | AWS region where resources will be created | `string` | `"ap-south-1"` | no |
 | <a name="input_cloudwatch_log_retention_days"></a> [cloudwatch\_log\_retention\_days](#input\_cloudwatch\_log\_retention\_days) | Number of days to retain CloudWatch logs | `number` | `30` | no |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Common tags to apply to all resources | `map(string)` | <pre>{<br>  "Environment": "production",<br>  "ManagedBy": "terraform",<br>  "Project": "aws-console-monitoring"<br>}</pre> | no |
 | <a name="input_force_destroy_s3_bucket"></a> [force\_destroy\_s3\_bucket](#input\_force\_destroy\_s3\_bucket) | Whether to force destroy the S3 bucket (for testing purposes) | `bool` | `false` | no |
